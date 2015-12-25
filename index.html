@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>Async with Promises</title>
+
+		<meta name="description" content="Let\'use promises in our async code. Daily.">
+		<meta name="author" content="Denislav Ganchev">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+		<link href='https://fonts.googleapis.com/css?family=Roboto:400,500,300,700,400italic,300italic' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/black-theme-fork.css" id="theme">
+
+		<!-- Code syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<!--Presentation-->
+		<div class="reveal">
+			<div class="slides">
+				<section>
+					<img src="assets/images/js-logo.png" alt="JS logo"/>
+					<h2 class="uppercase">
+						Async with <br /><span style="color: #F0DB4F">Promises</span>
+					</h2>
+				</section>
+
+				<section class="text__left">
+					<div class="col-half">
+						<h2 class="font__medium">Denislav Ganchev</h2>
+						<ul>
+							<li class="font__light">
+								<a href="https://denodenodeno.com">Front end developer</a>
+							</li>
+							<li class="font__light fragment">
+								<a href="https://denodenodeno.com">denodenodeno.com</a>
+							</li>
+							<li class="fragment">
+								<a href="https://github.com/denodenodeno">https://github.com/denodenodeno</a>
+							</li>
+							<li class="fragment">
+								<a href="https://twitter.com/denoStc">@denoStc</a>
+							</li>
+							<li class="fragment">
+								Storyworks1 team member since may 2015
+							</li>
+						</ul>
+					</div>
+					<div class="col-half">
+						<img class="pull-right" src="assets/images/denislav-ganchev.jpg" alt="de"/>
+					</div>
+				</section>
+
+			</div>
+		</div>
+		<!--:Presentation-->
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+
+			// Full list of configuration options available at:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				width: 1200,
+				height: 800,
+				transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+				// Optional reveal.js plugins
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true },
+					{ src: 'plugin/notes/notes.js', async: true }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
