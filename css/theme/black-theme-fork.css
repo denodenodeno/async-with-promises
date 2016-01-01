@@ -288,6 +288,10 @@ body {
     font-weight: 300!important;
 }
 
+.font__size-small {
+    font-size: 10px!important;
+}
+
 .font__medium {
     font-weight: 500;
 }
